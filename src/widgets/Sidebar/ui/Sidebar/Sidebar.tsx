@@ -13,7 +13,7 @@ const Sidebar = ({ className }: SidebarProps) => {
     return (
         <div className={classNames(cls.Sidebar, { [cls.open]: open }, [className])}>
             Sidebar11
-            <button onClick={() => setOpen((p) => !p)}>toggle</button>
+            <button type="button" onClick={() => setOpen((p) => !p)}>toggle</button>
             <div className={cls.Switchers}>
                 <ThemeSwitcher />
                 <LanguageSwitcher />
